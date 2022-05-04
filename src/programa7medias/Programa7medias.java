@@ -22,15 +22,14 @@ public class Programa7medias {
         int nota=0,peso=0;
         
         System.out.println(" --> Calculo de Medias <--");
+            do{
         System.out.println("\n Digite:\n"
                 + "1 - Media Aritimética\n"
                 + "2 - Media Ponderada\n"
                 + "3 - Sair");
-    
         opcao = escolhaMenu.nextInt();
-            do{
         switch(opcao){
-            case '1':
+            case 1:
                  System.out.println("Digite a Nota numero 01: ");
                  notaMedia1 = escolhaMenu.nextInt();
                  
@@ -41,12 +40,12 @@ public class Programa7medias {
                  
                  System.out.println("A Media das Notas Digitas é: "+mediaNotas);
                 break;
-            case '2':
+            case 2:
                for(int contador = 0; contador < 3;contador++){ 
-                 System.out.println("Digite a Nota numero 01: ");
+                 System.out.println("Digite o numero um numero : ");
                  nota = escolhaMenu.nextInt();
                  
-                 System.out.println("Digite a Nota numero 02: ");
+                 System.out.printf("Digite o peso do numero acima : ");
                  peso = escolhaMenu.nextInt();
               
                  notaVezesPeso =notaVezesPeso+(nota * peso);
@@ -56,8 +55,7 @@ public class Programa7medias {
                 System.out.println("A média  Ponderada sera: "+mediaPonderada);
                 break;
             default:
-                System.out.println("Opção Invalida! ");
-                break;
+                   break;
     }
             }while(opcao !=3);
             
